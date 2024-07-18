@@ -1,9 +1,9 @@
 pipeline{
   agent any
   stages{
-    stage('Branch main'){
+    stage('Branch PROD'){
       steps{
-        echo "The branch is ${env.BRANCH_NAME}"
+        echo "This Branch is ${env.BRANCH_NAME}"
       }
     }
   }
